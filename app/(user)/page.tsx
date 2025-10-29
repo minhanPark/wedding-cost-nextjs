@@ -1,3 +1,6 @@
+import Link from "next/link";
+import Image from "next/image";
+
 import {
   Card,
   CardContent,
@@ -14,6 +17,50 @@ export default function Home() {
           <CardTitle className="text-xl">₩0</CardTitle>
         </CardContent>
       </Card>
+      <div className="mt-20 grid grid-cols-2 gap-4">
+        <Link href="/(user)/home">
+          <Card className="py-1 rounded-md">
+            <CardContent className="flex flex-col items-center gap-1.5">
+              <Image
+                className="h-[50px] w-auto"
+                src="/images/home.png"
+                alt="집"
+                width={50}
+                height={50}
+              />
+              <CardTitle className="text-lg">신혼집</CardTitle>
+            </CardContent>
+          </Card>
+        </Link>
+        <Link href="/(user)/home">
+          <Card className="py-5 rounded-md">
+            <CardContent className="relative">
+              <Image
+                className="absolute -top-12 right-1"
+                src="/images/home.png"
+                alt="집"
+                width={50}
+                height={50}
+              />
+              <CardTitle className="text-center">상견례</CardTitle>
+            </CardContent>
+          </Card>
+        </Link>
+        <Link href="/(user)/home">
+          <Card className="py-5 rounded-md">
+            <CardContent className="relative">
+              <Image
+                className="absolute -top-12 right-1"
+                src="/images/home.png"
+                alt="집"
+                width={50}
+                height={50}
+              />
+              <CardTitle className="text-center">신혼 여행</CardTitle>
+            </CardContent>
+          </Card>
+        </Link>
+      </div>
     </div>
   );
 }
