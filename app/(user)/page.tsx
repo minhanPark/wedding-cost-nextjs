@@ -33,16 +33,16 @@ export default function Home() {
           </Card>
         </Link>
         <Link href="/(user)/home">
-          <Card className="py-5 rounded-md">
-            <CardContent className="relative">
+          <Card className="py-1 rounded-md">
+            <CardContent className="flex flex-col items-center gap-1.5">
               <Image
-                className="absolute -top-12 right-1"
-                src="/images/home.png"
-                alt="집"
+                className="h-[50px] w-auto"
+                src="/images/wedding-ring.png"
+                alt="반지"
                 width={50}
                 height={50}
               />
-              <CardTitle className="text-center">상견례</CardTitle>
+              <CardTitle className="text-lg">예물</CardTitle>
             </CardContent>
           </Card>
         </Link>
