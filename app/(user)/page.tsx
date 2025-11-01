@@ -60,6 +60,20 @@ export default function Home() {
             </CardContent>
           </Card>
         </Link>
+        <Link href="/(user)/home">
+          <Card className="py-1 rounded-md">
+            <CardContent className="flex flex-col items-center gap-1.5">
+              <Image
+                className="h-[50px] w-auto"
+                src="/images/airplane.png"
+                alt="비행기"
+                width={50}
+                height={50}
+              />
+              <CardTitle className="text-lg">신혼 여행</CardTitle>
+            </CardContent>
+          </Card>
+        </Link>
       </div>
     </div>
   );
